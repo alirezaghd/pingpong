@@ -110,7 +110,7 @@ class Game:
                         me.y = Game.height - me.h
 
             ball.move()
-            cpu.move()
+            cpu.move(ball)
 
             if ball.x < 0:
                 cpu.score += 1
